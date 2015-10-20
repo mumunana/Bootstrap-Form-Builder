@@ -18,10 +18,7 @@ define([
         title: "Input"
         , collection: new SnippetsCollection(JSON.parse(inputJSON))
       });
-
-
-        //comment at 20152019 by mukun@founder
-/*      new TabView({
+      new TabView({
         title: "Radios / Checkboxes"
         , collection: new SnippetsCollection(JSON.parse(radioJSON))
       });
@@ -32,7 +29,7 @@ define([
       new TabView({
         title: "Buttons"
         , collection: new SnippetsCollection(JSON.parse(buttonsJSON))
-      });*/
+      });
 /*      new TabView({
         title: "Rendered"
         , content: renderTab
