@@ -1,3 +1,17 @@
+/*
+*comment by mu.kun@founder.com.cn 20151014
+* requirejs  紗墮猟云陣周窃侏 猟云
+* 喘隈eg:define([
+ 　　　　'text!review.txt',
+ 　　　　'image!cat.jpg'
+ 　　　　],
+ 　　　　function(review,cat){
+ 　　　　　　document.body.appendChild(cat);
+ 　　　　　　console.log(review);
+ 　　　　}
+ 　　);
+ * */
+
 define(function(require) {
   var formname               = require('text!templates/snippet/formname.html')
   , prependedtext            = require('text!templates/snippet/prependedtext.html')
