@@ -1,8 +1,8 @@
 require.config({
     baseUrl: "assets/js/lib/"
-    , shim: { //shim  ÓÃÀ´ÅäÖÃ²»·ûºÏAMD¹æ·¶µÄÄ£¿é ±ÈÈç  underscore.js  ºÍ Backbone.js
+    , shim: { //shim  ç”¨æ¥é…ç½®ä¸ç¬¦åˆAMDè§„èŒƒçš„æ¨¡å— æ¯”å¦‚  underscore.js  å’Œ Backbone.js
         'backbone': {
-            deps: ['underscore', 'jquery'], // backbone µÄÒÀÀµ£¨1£©exportsÖµ£¨Êä³öµÄ±äÁ¿Ãû£©£¬±íÃ÷Õâ¸öÄ£¿éÍâ²¿µ÷ÓÃÊ±µÄÃû³Æ£»£¨2£©depsÊı×é£¬±íÃ÷¸ÃÄ£¿éµÄÒÀÀµĞÔ¡£
+            deps: ['underscore', 'jquery'], // backbone çš„ä¾èµ–ï¼ˆ1ï¼‰exportså€¼ï¼ˆè¾“å‡ºçš„å˜é‡åï¼‰ï¼Œè¡¨æ˜è¿™ä¸ªæ¨¡å—å¤–éƒ¨è°ƒç”¨æ—¶çš„åç§°ï¼›ï¼ˆ2ï¼‰depsæ•°ç»„ï¼Œè¡¨æ˜è¯¥æ¨¡å—çš„ä¾èµ–æ€§ã€‚
             exports: 'Backbone'
         },
         'underscore': {
@@ -24,5 +24,5 @@ require.config({
     }
 });
 require(['app/app'], function (app) {
-    app.initialize();
+    app.initialize("æ–°Section");
 });
