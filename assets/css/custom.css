@@ -112,3 +112,11 @@ form .popover form {
  width: 100%;
  overflow: hidden;
 }
+
+
+.form-group{
+  margin-bottom: 10px;
+}
+.bottom_button{
+  margin-top: 20%;
+}
