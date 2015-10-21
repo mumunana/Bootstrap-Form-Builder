@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>科研库表单设计业</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>科研库表单设计页面</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <!--<meta name="author" content="">-->
@@ -15,18 +15,101 @@
     <script src="assets/js/lib/html5.js"></script>
     <![endif]-->
 
- <!--   <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">-->
+    <!--   <link rel="shortcut icon" href="images/favicon.ico">
+       <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+       <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+       <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">-->
 </head>
 
 <body>
 
 <div class="container">
     <div class="row clearfix">
+        <!-- Components -->
+        <div class="span4">
+            <!--<h2>Drag & Drop components</h2>-->
+            <!--<hr>-->
+            <div class="tabbable">
+                <ul class="nav nav-tabs" id="formtabs">
+                    <!-- Tab nav -->
+                    <li class="active"><a href="#tab_content_crf" data-toggle="tab">CRF配置</a></li>
+                    <li><a href="#tab_content_section" data-toggle="tab">Section配置</a></li>
+                    <li><a href="#tab_content_item" data-toggle="tab">控件类型</a></li>
+                    <li><a href="#tab_content_itemData" data-toggle="tab">控件属性</a></li>
+                </ul>
+                <form class="form-horizontal" id="components">
+                    <fieldset>
+                        <div class="tab-content">
+                            <!-- Tabs of snippets go here -->
+                            <div id="tab_content_crf" class="tab-pane active">
+                                <div class="form-group">
+                                    <label for="crf_name">CRF名称</label>
+                                    <input type="text" class="form-control" id="crf_name"
+                                           placeholder="CRF名称">
+                                </div>
+                                <div class="form-group">
+                                    <label for="crf_description">CRF描述</label>
+                                    <textarea id="crf_description" class="form-control" rows="3"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="crf_version">版本号</label>
+                                    <input type="text" class="form-control" id="crf_version" disabled
+                                           placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="crf_revision_notes">版本更改记录</label>
+                                    <input type="text" class="form-control" id="crf_revision_notes"
+                                           placeholder="版本更改记录">
+                                </div>
+                            </div>
+                            <div id="tab_content_section" class="tab-pane ">
+                                <div class="form-group">
+                                    <label for="section_name">Section名称</label>
+                                    <input type="text" class="form-control" id="section_name"
+                                           placeholder="Section名称">
+                                </div>
+                                <div class="form-group">
+                                    <label for="section_description">描述</label>
+                                    <textarea id="section_description" class="form-control" rows="3"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="section_layout">版本号</label>
+                                    <select id="section_layout" class="form-control">
+                                        <option value="1">居上</option>
+                                        <option value="2">居左</option>
+                                    </select>
+
+                                </div>
+                                <div class="bottom_button">
+                                    <button type="button" class="btn btn-info">新增Section</button>
+                                </div>
+                            </div>
+                            <div id="tab_content_item" class="tab-pane ">
+                                <h4>
+                                    基本
+                                </h4>
+                                <button type="button" class="btn btn-primary">新增Section</button>
+                                <hr>
+                                <h4>
+                                    扩展
+                                </h4>
+                                <hr>
+                                <h4>
+                                    已定义模版
+                                </h4>
+                            </div>
+                            <div id="tab_content_itemData" class="tab-pane ">
+                                itemData配置
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <!-- / Components -->
         <!-- Building Form. -->
-        <div class="span6">
+        <div class="span8">
             <div class="clearfix">
                 <!--<h2>Your Form</h2>-->
                 <!--<hr>-->
@@ -38,28 +121,17 @@
         </div>
         <!-- / Building Form. -->
 
-        <!-- Components -->
-        <div class="span6">
-            <!--<h2>Drag & Drop components</h2>-->
-            <!--<hr>-->
-            <div class="tabbable">
-                <ul class="nav nav-tabs" id="formtabs">
-                    <!-- Tab nav -->
-                </ul>
-                <form class="form-horizontal" id="components">
-                    <fieldset>
-                        <div class="tab-content">
-                            <!-- Tabs of snippets go here -->
-                        </div>
 
-                    </fieldset>
-                </form>
-            </div>
-        </div>
-        <!-- / Components -->
     </div>
-</div> <!-- /container -->
-<script data-main="assets/js/main.js" src="assets/js/lib/require.js" ></script>
+</div>
+<!-- /container -->
 
+
+<script data-main="assets/js/main.js" src="assets/js/lib/require.js"></script>
+
+
+<script>
+
+</script>
 </body>
 </html>
