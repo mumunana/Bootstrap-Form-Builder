@@ -1,0 +1,125 @@
+[
+  {
+    "title": "Single Button",
+    "fields": {
+      "id": {
+        "label": "ID / Name",
+        "type": "input",
+        "value": "text"
+      },
+      "label": {
+        "label": "Label Text",
+        "type": "input",
+        "value": ""
+      },
+      "buttonlabel": {
+        "label": "Button Label",
+        "type": "input",
+        "value": "单行文本"
+      },
+      "buttontype": {
+        "label": "Button Type",
+        "type": "select",
+        "value": [
+          {
+            "value": "btn-default",
+            "label": "Default",
+            "selected": false
+          },
+          {
+            "value": "btn-primary",
+            "label": "Primary",
+            "selected": true
+          },
+          {
+            "value": "btn-info",
+            "label": "Info",
+            "selected": false
+          },
+          {
+            "value": "btn-success",
+            "label": "Success",
+            "selected": false
+          },
+          {
+            "value": "btn-warning",
+            "label": "Warning",
+            "selected": false
+          },
+          {
+            "value": "btn-danger",
+            "label": "Danger",
+            "selected": false
+          },
+          {
+            "value": "btn-inverse",
+            "label": "Inverse",
+            "selected": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "title": "Single Button",
+    "fields": {
+      "id": {
+        "label": "ID / Name",
+        "type": "input",
+        "value": "text"
+      },
+      "label": {
+        "label": "Label Text",
+        "type": "input",
+        "value": ""
+      },
+      "buttonlabel": {
+        "label": "Button Label",
+        "type": "input",
+        "value": "Button"
+      },
+      "buttontype": {
+        "label": "Button Type",
+        "type": "select",
+        "value": [
+          {
+            "value": "btn-default",
+            "label": "Default",
+            "selected": false
+          },
+          {
+            "value": "btn-primary",
+            "label": "Primary",
+            "selected": true
+          },
+          {
+            "value": "btn-info",
+            "label": "Info",
+            "selected": false
+          },
+          {
+            "value": "btn-success",
+            "label": "Success",
+            "selected": false
+          },
+          {
+            "value": "btn-warning",
+            "label": "Warning",
+            "selected": false
+          },
+          {
+            "value": "btn-danger",
+            "label": "Danger",
+            "selected": false
+          },
+          {
+            "value": "btn-inverse",
+            "label": "Inverse",
+            "selected": false
+          }
+        ]
+      }
+    }
+  }
+
+]
