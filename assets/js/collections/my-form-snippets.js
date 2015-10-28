@@ -1,13 +1,13 @@
 define([
-       "jquery" , "underscore" , "backbone"
-       , "models/snippet"
-       , "collections/snippets"
-       , "views/my-form-snippet"
+  "jquery" , "underscore" , "backbone"
+  , "models/snippet"
+  , "collections/snippets"
+  , "views/my-form-snippet"
 ], function(
-  $, _, Backbone
-  , SnippetModel
-  , SnippetsCollection
-  , MyFormSnippetView
+    $, _, Backbone
+    , SnippetModel
+    , SnippetsCollection
+    , MyFormSnippetView
 ){
   return SnippetsCollection.extend({
     model: SnippetModel
@@ -15,6 +15,7 @@ define([
       this.counter = {};
       this.on("add", this.giveUniqueId);
     }
+
     , giveUniqueId: function(snippet){
       if(!snippet.get("fresh")) {
         return;
@@ -41,8 +42,8 @@ define([
     }
     , renderAll: function(){
       return this.map(function(snippet){
-    })
         return new MyFormSnippetView({model: snippet}).render(true);
+      })
     }
     , renderAllClean: function(){
       return this.map(function(snippet){

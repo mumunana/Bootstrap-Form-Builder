@@ -1,11 +1,11 @@
 define([
     'jquery', 'underscore', 'backbone'
-    //, "text!templates/app/tab-nav.html"
+    , "text!templates/app/tab-nav.html"
     , "models/snippet"
      , "views/snippet", "views/temp-snippet"
      , "helper/pubsub"
 ], function ($, _, Backbone
-    //, _tabNavTemplate
+    , _tabNavTemplate
              , SnippetModel
               , SnippetView, TempSnippetView
               , PubSub) {
