@@ -24,5 +24,5 @@ require.config({
     }
 });
 require(['app/app'], function (app) {
-    app.initialize("新Section");
+    app.initialize("病人资料");
 });

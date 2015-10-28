@@ -7,7 +7,6 @@ define([
   return Backbone.View.extend({
     tagName: "div"
     , className: "tab-pane"
-    ,id:"123"
     , initialize: function() {
       //this.id = this.options.title.toLowerCase().replace(/\W/g,'');
       this.id = this.options.title.toLowerCase();
@@ -25,10 +24,11 @@ define([
         that.$el.append(that.options.content);
       }
       // Render & append nav for tab
-      $("#formtabs").append(this.tabNavTemplate({title: this.options.title, id: this.id}))
+      //$("#formtabs").append(this.tabNavTemplate({title: this.options.title, id: this.id}))
       // Render tab
-      this.$el.attr("id", this.id);
-      this.$el.appendTo(".tab-content");
+      //this.$el.attr("id", this.id);
+      //this.$el.attr("id", "tab_content_item");
+      //this.$el.appendTo(".tab-content");
       this.delegateEvents();
     }
   });

@@ -1,15 +1,15 @@
 /*
 *comment by mu.kun@founder.com.cn 20151014
-* requirejs  ¼ÓÔØÎÄ±¾¿Ø¼þÀàÐÍ ÎÄ±¾
-* ÓÃ·¨eg:define([
- ¡¡¡¡¡¡¡¡'text!review.txt',
- ¡¡¡¡¡¡¡¡'image!cat.jpg'
- ¡¡¡¡¡¡¡¡],
- ¡¡¡¡¡¡¡¡function(review,cat){
- ¡¡¡¡¡¡¡¡¡¡¡¡document.body.appendChild(cat);
- ¡¡¡¡¡¡¡¡¡¡¡¡console.log(review);
- ¡¡¡¡¡¡¡¡}
- ¡¡¡¡);
+* requirejs  ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½Ø¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ä±ï¿½
+* ï¿½Ã·ï¿½eg:define([
+ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½'text!review.txt',
+ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½'image!cat.jpg'
+ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½],
+ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½function(review,cat){
+ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½document.body.appendChild(cat);
+ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½console.log(review);
+ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½}
+ ï¿½ï¿½ï¿½ï¿½);
  * */
 
 define(function(require) {

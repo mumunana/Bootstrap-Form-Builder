@@ -1,21 +1,25 @@
 define([
     "jquery", "underscore", "backbone"
     , "collections/snippets", "collections/my-form-snippets"
-    , "views/tab", "views/my-form"
+    , "views/tab", "views/my-form" ,"views/baseWidget"
     , "text!data/input.json", "text!data/radio.json", "text!data/select.json", "text!data/buttons.json","text!data/widget.json"
     , "text!templates/app/render.html", "text!templates/app/about.html",
 ], function ($, _, Backbone
     , SnippetsCollection, MyFormSnippetsCollection
-    , TabView, MyFormView
+    , TabView, MyFormView ,BaseWidgetView
     , inputJSON, radioJSON, selectJSON, buttonsJSON,widgetJson
     , renderTab, aboutTab) {
     return {
         initialize: function (formName) {
             //Bootstrap tabs from json.
-
+            //给基础控件绑定事件
+            new BaseWidgetView({
+                    title: "基础控件"
+                    , collection: new SnippetsCollection(JSON.parse(inputJSON))
+            });
             //new TabView({
             //    title: "CRF配置"
-            //    //, collection: new SnippetsCollection(JSON.parse(inputJSON))
+            //    , collection: new SnippetsCollection(JSON.parse(inputJSON))
             //});
 /*            new TabView({
                 title: "CRF配置"

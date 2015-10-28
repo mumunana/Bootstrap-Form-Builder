@@ -15,7 +15,6 @@ define([
       this.counter = {};
       this.on("add", this.giveUniqueId);
     }
-
     , giveUniqueId: function(snippet){
       if(!snippet.get("fresh")) {
         return;
@@ -42,8 +41,8 @@ define([
     }
     , renderAll: function(){
       return this.map(function(snippet){
+    })
         return new MyFormSnippetView({model: snippet}).render(true);
-      })
     }
     , renderAllClean: function(){
       return this.map(function(snippet){
