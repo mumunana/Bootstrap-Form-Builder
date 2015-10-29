@@ -1,17 +1,17 @@
 define([
     'jquery', 'underscore', 'backbone'
-    , "text!templates/app/tab-nav.html"
+    //, "text!templates/app/tab-nav.html"
     , "models/snippet"
      , "views/snippet", "views/temp-snippet"
      , "helper/pubsub"
 ], function ($, _, Backbone
-    , _tabNavTemplate
+    //, _tabNavTemplate
              , SnippetModel
               , SnippetView, TempSnippetView
               , PubSub) {
     return Backbone.View.extend({
         tagName: "div"
-        , className: "tab-pane"
+        //, className: "tab_content_item"
         , initialize: function () {
             //this.tabNavTemplate = _.template(_tabNavTemplate);
             this.render();
@@ -21,30 +21,25 @@ define([
             var that = this;
             if (that.collection !== undefined) {
                 _.each(this.collection.renderAll(), function (snippet) {
-                    that.$el.append(snippet);
+                    //朝id 中插入  snittpe
+                    //that.$el.append(snippet);
                 });
             } else if (that.options.content) {
-                that.$el.append(that.options.content);
+                //that.$el.append(that.options.content);
             }
 
             this.delegateEvents();
         },
         //绑定基本控件下的控件事件
-        el: "#tab_content_item",
-        initialize: function () {
-            console.log(this.options);
-            this.render();
+        el:  function(){
+            console.log(this.options) ;
         },
-        render: function () {
+         events: {
+            "mousedown .btn-primary": "mouseDownHandler"
+        },
+  /*      event_handler: function (event) {
 
-        },
-        events: {
-            "click .btn-primary": "event_handler",
-            "mousedown": "mouseDownHandler"
-        },
-        event_handler: function (event) {
-
-        },
+        },*/
         mouseDownHandler: function (mouseDownEvent) {
             mouseDownEvent.preventDefault();
             mouseDownEvent.stopPropagation();

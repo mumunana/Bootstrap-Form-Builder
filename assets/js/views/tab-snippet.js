@@ -15,14 +15,13 @@ define([
       "mousedown" : "mouseDownHandler"
     }
     , mouseDownHandler: function(mouseDownEvent){
-
       mouseDownEvent.preventDefault();
       mouseDownEvent.stopPropagation();
       //hide all popovers
-      //$(".popover").hide();
+      $(".popover").hide();
       //$("body").append(new TempSnippetView({model: new SnippetModel($.extend(true,{},this.model.attributes))}).render());
-      //$("body").append(new TempSnippetView({model: new SnippetModel($.extend(true,{},this.model.attributes))}).render());
-      //PubSub.trigger("newTempPostRender", mouseDownEvent);
+      $("body").append(new TempSnippetView({model: new SnippetModel($.extend(true,{},this.model.attributes))}).render());
+      PubSub.trigger("newTempPostRender", mouseDownEvent);
     }
   });
 });

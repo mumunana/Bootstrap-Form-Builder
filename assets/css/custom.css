@@ -36,6 +36,7 @@ textarea {
 .popover {
   z-index: 9999999;
 }
+
 .popover .control-group {
   cursor: default;
 }
@@ -44,7 +45,7 @@ textarea {
   cursor: text;
 }
 
-.temp{
+.temp {
   width: 100%;
   height: 100%;
   background: transparent;
@@ -65,14 +66,12 @@ textarea {
   overflow: hidden;
 }
 
-#render{
+#render {
   min-height: 500px;
   font-family: monospace;
 }
 
-/* Popovers now are appended to their parent rather
-than to the body/main document as they once were.
-We need to over-ride some inherited stuff.. */
+/* Popovers now are appended to their parent rather than to the body/main document as they once were. We need to over-ride some inherited stuff.. */
 form .popover .controls {
   margin-left: 0;
 }
@@ -85,14 +84,14 @@ form .popover form {
   width: 224px;
 }
 
-.popover-content form .btn{
+.popover-content form .btn {
   margin-right: 10px
 }
 
-.target:after{
-  float:left;
+.target:after {
+  float: left;
   content: " ";
-  height: 77px; 
+  height: 77px;
   margin-top: 3px;
   background: #f0f0f0;
   width: 100%;
@@ -100,38 +99,72 @@ form .popover form {
 }
 
 #target, #input, #radioscheckboxes, #select, #buttons {
- -webkit-touch-callout: none;
- -webkit-user-select: none;
- -khtml-user-select: none;
- -moz-user-select: none;
- -ms-user-select: none;
- user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-#target fieldset{
- width: 100%;
- overflow: hidden;
+#target fieldset {
+  width: 100%;
+  overflow: hidden;
 }
 
-.form-group{
+.form-group {
   margin-bottom: 10px;
 }
-.bottom_button{
+
+.bottom_button {
   margin-top: 20%;
 }
 
-#components{
+#components {
   border: 1px solid #cccccc;
   padding: 15px;
   border-top: 0px;
 }
-#formtabs{
+
+#formtabs {
   margin-bottom: 0px;
 }
-#tab_content_itemData_container >form >.controls{
+
+#tab_content_itemData_container > form > .controls {
   margin-left: 5px;
 }
 
-#tab_content_itemData_container >form >.controls >label{
+#tab_content_itemData_container > form > .controls > label {
   text-align: left;
+}
+
+#formtabs {
+  font-size: 12px;
+  border-bottom: 4px solid #046AA8;
+}
+
+#formtabs > li {
+  margin-bottom: 0px;
+}
+
+#formtabs > li > a {
+  color: #ffffff;
+  background-color: #5BC3F4;
+  border: 1px solid #046AA8;
+  border-bottom: 0px;
+}
+
+#formtabs > li[class="active"] > a {
+  background-color: #046AA8;
+}
+
+.targetForm{
+  background-color: #E7F2F8;
+}
+.btn-addSection{
+  margin-top: 20%;
+}
+.container{
+  width: 100%;
+  padding: 0px 15px 0px 30px;
 }
