@@ -1,5 +1,5 @@
 /**
- * Created by Founder on 2015/10/22.
+ * Created by Founder on 2015/10/30.
  */
 define([
     "jquery", "underscore", "backbone"
@@ -16,13 +16,17 @@ define([
         events:{
             "mousedown" : "mouseDownHandler"
         }
-        , mouseDownHandler: function(mouseDownEvent){
+        ,
+        mouseDownHandler: function(mouseDownEvent){
             mouseDownEvent.preventDefault();
             mouseDownEvent.stopPropagation();
             //hide all popovers
             $(".popover").hide();
+            console.log(this);
+            //$("body").append(new TempSnippetView({model: new SnippetModel($.extend(true,{},this.model.attributes))}).render());
             $("body").append(new TempSnippetView({model: new SnippetModel($.extend(true,{},this.model.attributes))}).render());
             PubSub.trigger("newTempPostRender", mouseDownEvent);
         }
     });
 });
+

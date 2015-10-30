@@ -3,29 +3,15 @@
     "title": "Text Input",
     "fields": {
       "id": {
-        "label": "输入框ID / Name",
+        "label": "ID / Name",
         "type": "input",
-        "value": "textinput"
+        "value": "textinput",
+        "class":"displaNone"
       },
       "label": {
         "label": "左侧文字",
         "type": "input",
-        "value": "单行文本"
-      },
-      "rightText": {
-        "label": "右侧文字",
-        "type": "input",
-        "value": "单行文本"
-      },
-      "questionNumber": {
-        "label": "问题序号",
-        "type": "input",
-        "value": "问题序号"
-      },
-      "units": {
-        "label": "单位格式",
-        "type": "input",
-        "value": "单位格式"
+        "value": "Text Input"
       },
       "placeholder": {
         "label": "Placeholder",
@@ -35,17 +21,12 @@
       "helptext": {
         "label": "Help Text",
         "type": "input",
-        "value": ""
+        "value": "helpss"
       },
       "required": {
         "label": "Required",
         "type": "checkbox",
         "value": false
-      },
-        "searchable": {
-        "label": "是否可搜索",
-        "type": "input",
-        "value": "是否可搜索"
       },
       "inputsize": {
         "label": "Input Size",

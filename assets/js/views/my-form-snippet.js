@@ -14,7 +14,8 @@ define([
       , "mouseup"   : "mouseUpHandler"
     }
 
-    , mouseDownHandler : function(mouseDownEvent){
+    ,
+    mouseDownHandler : function(mouseDownEvent){
       //点击表单事件
       mouseDownEvent.stopPropagation();
       mouseDownEvent.preventDefault();

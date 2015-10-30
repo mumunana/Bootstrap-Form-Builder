@@ -19,9 +19,12 @@ define([
       mouseDownEvent.stopPropagation();
       //hide all popovers
       $(".popover").hide();
+          console.log(this);
       //$("body").append(new TempSnippetView({model: new SnippetModel($.extend(true,{},this.model.attributes))}).render());
       $("body").append(new TempSnippetView({model: new SnippetModel($.extend(true,{},this.model.attributes))}).render());
       PubSub.trigger("newTempPostRender", mouseDownEvent);
-    }
+    },
+
+
   });
 });

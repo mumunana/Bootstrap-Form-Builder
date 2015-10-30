@@ -25,11 +25,13 @@ define([
       this.halfWidth  = Math.floor(this.tempForm.clientWidth/2);
       this.centerOnEvent(mouseEvent);
     }
-    , events:{
+    ,
+    events:{
       "mousemove": "mouseMoveHandler",
       "mouseup" : "mouseUpHandler"
     }
-    , centerOnEvent: function(mouseEvent){
+    ,
+    centerOnEvent: function(mouseEvent){
       var mouseX     = mouseEvent.pageX;
       var mouseY     = mouseEvent.pageY;
       this.tempForm.style.top = (mouseY - this.halfHeight) + "px";
