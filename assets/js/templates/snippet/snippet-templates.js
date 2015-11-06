@@ -34,7 +34,10 @@ define(function(require) {
   , selectbasic              = require('text!templates/snippet/selectbasic.html')
   , selectmultiple           = require('text!templates/snippet/selectmultiple.html')
   , textarea                 = require('text!templates/snippet/textarea.html')
-  , textinput                = require('text!templates/snippet/textinput.html');
+  , textinput                = require('text!templates/snippet/textinput.html')
+  //new add by mukun@20152205
+  , titletext                = require('text!templates/snippet/titletext.html');
+
 
   return {
     formname                   : formname
@@ -59,5 +62,7 @@ define(function(require) {
     , selectmultiple           : selectmultiple
     , textarea                 : textarea
     , textinput                : textinput
+    //new add by mukun@20151105
+    , titletext               : titletext
   }
 });

@@ -11,7 +11,7 @@ define([
              _buttonNavTemplate) {
     return Backbone.View.extend({
         tagName: "div"
-        , className: "row"
+        , className: "col-xs-4"
         , initialize: function () {
             //this.id = this.options.title.toLowerCase().replace(/\W/g,'');
             this.id = this.options.title.toLowerCase();
@@ -53,6 +53,7 @@ define([
             //this.$el.attr("id", this.id);
             //this.$el.attr("id", "tab_content_item");
             //this.$el.appendTo(".tab-content");
+            //插入控件按钮到控件类型页签页面中
             this.$el.appendTo("#tab_content_item_input");
             //tab_content_item_input
             this.delegateEvents();

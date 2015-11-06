@@ -168,3 +168,18 @@ form .popover form {
   width: 100%;
   padding: 0px 15px 0px 30px;
 }
+
+#tab_content_item .component {
+  display: none;
+}
+
+.form-title{
+  background-color: #2e6da4;
+  line-height: 1.4;
+}
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Text Area",
+    "fields": {
+      "id": {
+        "label": "ID / Name",
+        "type": "input",
+        "value": "textarea"
+      },
+      "label": {
+        "label": "Label Text",
+        "type": "input",
+        "value": "Text Area"
+      },
+      "textarea": {
+        "label": "Starting Text",
+        "type": "textarea",
+        "value": "default text"
+      }
+    }
+  }
+]
