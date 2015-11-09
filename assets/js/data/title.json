@@ -6,7 +6,7 @@
         "label": "ID / Name",
         "type": "input",
         "value": "textinput",
-        "class":"displaNone"
+        "class":"displaOut"
       },
       "label": {
         "label": "左侧文字",
@@ -21,12 +21,15 @@
       "helptext": {
         "label": "Help Text",
         "type": "input",
-        "value": "helpss"
+        "value": "",
+        "class":"displayOut"
+
       },
       "required": {
-        "label": "Required",
+        "label": "是否",
         "type": "checkbox",
-        "value": false
+        "value": false,
+        "display":"none"
       },
       "inputsize": {
         "label": "Input Size",

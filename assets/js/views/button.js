@@ -11,7 +11,7 @@ define([
              _buttonNavTemplate) {
     return Backbone.View.extend({
         tagName: "div"
-        , className: "col-xs-4"
+        , className: "col-xs-5 buttonDivContent"
         , initialize: function () {
             //this.id = this.options.title.toLowerCase().replace(/\W/g,'');
             this.id = this.options.title.toLowerCase();
@@ -19,7 +19,7 @@ define([
             this.render();
         }
         , events: {
-            "mousedown": "funtest"
+            "mousedown": "mouseDownHandler"
         }
         , render: function () {
             // Render Snippet Views
@@ -58,8 +58,8 @@ define([
             //tab_content_item_input
             this.delegateEvents();
         }
-        ,funtest: function (event) {
-            console.log($(this.el)) ;
+        ,mouseDownHandler: function (event) {
+            //测试
             $(this.el).find(".component").mousedown();
 
         }

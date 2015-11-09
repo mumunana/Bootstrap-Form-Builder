@@ -4,6 +4,7 @@ define([
     //, "views/tab"
     , "views/button","views/my-form"
     , "text!data/input.json", "text!data/radio.json", "text!data/select.json", "text!data/buttons.json"
+    , "text!data/textarea.json"
     , "text!data/title.json"
     , "text!templates/app/render.html", "text!templates/app/about.html",
 ], function ($, _, Backbone
@@ -11,6 +12,7 @@ define([
     //, TabView
     ,ButtonView, MyFormView
     , inputJSON, radioJSON, selectJSON, buttonsJSON
+    ,textAreaJson
     , titleJson
     , renderTab, aboutTab) {
     return {
@@ -35,7 +37,7 @@ define([
             });
             new ButtonView({
                 title: "文本域"
-                , collection: new SnippetsCollection(JSON.parse(textArea))
+                , collection: new SnippetsCollection(JSON.parse(textAreaJson))
             });
             new ButtonView({
                 title: "单选下拉框"
@@ -46,7 +48,39 @@ define([
                 , collection: new SnippetsCollection(JSON.parse(selectJSON))
             });
             new ButtonView({
-                title: ""
+                title: "单选按钮"
+                , collection: new SnippetsCollection(JSON.parse(selectJSON))
+            });
+            new ButtonView({
+                title: "复选按钮"
+                , collection: new SnippetsCollection(JSON.parse(selectJSON))
+            });
+            new ButtonView({
+                title: "计算"
+                , collection: new SnippetsCollection(JSON.parse(selectJSON))
+            });
+            new ButtonView({
+                title: "文件上传"
+                , collection: new SnippetsCollection(JSON.parse(selectJSON))
+            });
+            new ButtonView({
+                title: "日期"
+                , collection: new SnippetsCollection(JSON.parse(selectJSON))
+            });
+            new ButtonView({
+                title: "时间"
+                , collection: new SnippetsCollection(JSON.parse(selectJSON))
+            });
+            new ButtonView({
+                title: "不完整日期"
+                , collection: new SnippetsCollection(JSON.parse(selectJSON))
+            });
+            new ButtonView({
+                title: "电话"
+                , collection: new SnippetsCollection(JSON.parse(selectJSON))
+            });
+            new ButtonView({
+                title: "邮箱"
                 , collection: new SnippetsCollection(JSON.parse(selectJSON))
             });
             //Make the first tab active!
